@@ -1,0 +1,238 @@
+
+  /**
+  * Theme Name: ptype
+  * Theme URL: http://geekedtype.com
+  * Description: This is  The main template file
+  * Author: Thiru Kimana <kimstilltheman@geekedtype.com>
+  * Theme Version: 0.0.1
+  *	
+  **/
+
+  
+
+
+
+
+
+/*------------------------------------------------*/
+/*-----------------[CSS RESET]---------------------*/
+/*------------------------------------------------*/
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q {	quotes: none; }
+blockquote:before, blockquote:after,q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+
+
+
+
+
+
+
+
+
+ 
+ h1{
+font-family: Bookman old style;	
+font-size:35px;
+font-style:bold;
+color: #000;	
+	
+
+	
+}
+ 
+ 
+ 
+h2{
+font-family: Georgia-bold;
+font-size:28px;
+color: #767676;
+text-decoration:none;	
+}
+
+ 
+h3{
+font-family: Georgia-bold;
+font-size:24px;
+color: #000;
+
+}
+
+h4{
+font-family: Georgia-bold;
+font-size:24px;
+color: #000;
+
+}
+
+
+a{
+	text-decoration:none;
+	color:inherit;
+}
+
+
+/*------------------------------------------------*/
+/*-----------------[CONTENT LAYOUT]---------------*/
+/*------------------------------------------------*/
+
+
+
+#page-title{
+	
+}
+
+
+#site-title{
+font-family: Bookman old style;	
+font-size:35px;
+font-style:strong;
+color: #000;
+}
+
+#site-logo {
+	background: url(images/logo-wording.png);
+    margin-bottom: 0;
+    position: absolute;
+    right: calc(100% + (1.25 * 1rem));
+    top: 4px;
+    z-index: 999;
+}
+
+html{
+	
+		
+	 	
+}
+header{
+margin-bottom: 315px;	
+background: url(images/var-header.png);
+background-repeat:no-repeat top center;
+height:200px;
+width:1280px;
+
+
+}
+body{
+
+ 
+
+background:gray url(images/background.png);
+background-repeat:no-repeat;
+width:1280px;
+margin-left: auto;
+margin-right: auto;
+background-size:contain;
+
+}
+#content nav{	
+
+position:relative;
+width:960px;
+height:100px;
+margin-top:355px;
+margin-bottom:10px;
+margin-left: auto;
+margin-right: auto;
+background:gray url(../images/links-b.g-new.png);
+background-repeat:no-repeat;
+
+}
+/* =Navigation
+-------------------------------------------------------------- */
+
+#content nav {
+	clear: both;
+	overflow: hidden;
+	padding: 0 0 1.625em;
+}
+#content nav a {
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 2.2em;
+}
+#nav-above {
+	padding: 0 0 1.625em;
+}
+#nav-above {
+	display: none;
+}
+.paged #nav-above {
+	display: block;
+}
+.nav-previous {
+	float: left;
+	width: 50%;
+}
+.nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+#content nav .meta-nav {
+	font-weight: normal;
+}
+
+/* Singular navigation */
+#nav-single {
+	float: right;
+	position: relative;
+	top: -0.3em;
+	text-align: right;
+	z-index: 1;
+}
+#nav-single .nav-previous,
+#nav-single .nav-next {
+	width: auto;
+}
+#nav-single .nav-next {
+	padding-left: .5em;
+}
+#nav-single .nav-previous {
+	padding-right: .5em;
+}
+ 	
+
+article{
+	
+font-family: Myriad Pro,Georgia,Helvetica, sans-serif; 	
+font-size:16px;
+color:#606060;	
+width:960px;
+height:2286px;
+background: url(images/content-b.g.png);
+background-repeat:repeat-y center;
+overflow: hidden;
+margin-left: auto;
+margin-right: auto;
+margin-top:10px;
+margin-bottom:10px;
+
+
+}
+
+footer{
+	height:300px;
+	width:1280px;
+	background: url(images/var-footer.png);
+	background-repeat:no-repeat bottom center;
+	
+
+ }
