@@ -2,22 +2,31 @@
   /**
   * Theme Name: ptype
   * Theme URL: http://geekedtype.com
-  * Description: This is  The main template file
+  * Description: This is the main styles file
   * Author: Thiru Kimana <kimstilltheman@geekedtype.com>
-  * Theme Version: 0.0.1
+  * GNU General Public License v2 or later
+  * Version: 0.0.1
+  * Copyright 2020, Thiru Kimana
   *	
   **/
-
+/* = Table of contents
+-------------------------------------------------------------- 
+  	0. CSS Reset
+	1. Clearings	
+	2. Base Styles	
+	3. Typography	
+	4. Colors	
+	5. Fonts	
+	6. Layout		
+	7. Content
+	8. Media Queries
+  ----------------------------------------------------------------------------- */
   
 
 
-
-
-
-/*------------------------------------------------*/
-/*-----------------[CSS RESET]---------------------*/
-/*------------------------------------------------*/
-
+/* --------------------------------------------------------- */
+  /* = . [CSS Reset]
+--------------------------------------------------------------*/
 
 
 html, body, div, span, applet, object, iframe,
@@ -37,63 +46,54 @@ ins { text-decoration: none; }
 del { text-decoration: line-through; }
 table { border-collapse: collapse; border-spacing: 0; }
 
-
-
-
-
-
-
-
-
-
-
- 
- h1{
-font-family: Bookman old style;	
-font-size:35px;
-font-style:bold;
-color: #000;	
-	
-
-	
+/* --------------------------------------------------------- */
+  /* = . [Base Styles]
+--------------------------------------------------------------*/ 
+html{
+font-size: 62.5%;	
+background:grey url(images/background.png);
+background-repeat:no-repeat;
+height:auto;
+width: 1280px;
+margin: 0 auto;	 		
 }
- 
- 
- 
-h2{
-font-family: Georgia-bold;
-font-size:28px;
-color: #767676;
-text-decoration:none;	
+body{
+position:relative;
+height:auto;
+max-width:1280px;
+margin: 0 auto;
+max-width: 100%;
+font-family: Myriad Pro,Georgia,Helvetica, sans-serif; 	
+font-size:16px;
+color:#606060;	
 }
-
+/* --------------------------------------------------------- */
+  /* = . [Typography]
+--------------------------------------------------------------*/ 
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 2rem;
+	font-weight: 700; }
+  h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;
+	 font-family: Bookman old style;color: #000;}
+  h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem;
+	font-family: Georgia-bold;color: #767676; text-decoration:none;}
+  h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem;
+	font-family: Georgia-bold;color: #000;}
+  h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem;
+	font-family: Georgia-bold;color: #000;}
+  h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+  h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
  
-h3{
-font-family: Georgia-bold;
-font-size:24px;
-color: #000;
-
-}
-
-h4{
-font-family: Georgia-bold;
-font-size:24px;
-color: #000;
-
-}
-
 
 a{
 	text-decoration:none;
 	color:inherit;
 }
 
-
-/*------------------------------------------------*/
-/*-----------------[CONTENT LAYOUT]---------------*/
-/*------------------------------------------------*/
-
-
+/* --------------------------------------------------------- */
+  /* = .  [Content Layout] 
+--------------------------------------------------------------*/ 
 
 #page-title{
 	
@@ -116,11 +116,7 @@ color: #000;
     z-index: 999;
 }
 
-html{
-	
-		
-	 	
-}
+
 header{
 margin-bottom: 315px;	
 background: url(images/var-header.png);
@@ -130,33 +126,20 @@ width:1280px;
 
 
 }
-body{
 
- 
 
-background:gray url(images/background.png);
-background-repeat:no-repeat;
-width:1280px;
-margin-left: auto;
-margin-right: auto;
-background-size:contain;
-
-}
-#content nav{	
-
-position:relative;
-width:960px;
-height:100px;
-margin-top:355px;
-margin-bottom:10px;
-margin-left: auto;
-margin-right: auto;
-background:gray url(../images/links-b.g-new.png);
-background-repeat:no-repeat;
-
-}
-/* =Navigation
--------------------------------------------------------------- */
+/* = Navigation
+  ========================================================================== */
+  #content nav{	
+	position:relative;
+	width:960px;
+	height:100px;
+	margin-top:355px;
+	margin-bottom:10px;
+	margin-left: auto;
+	margin-right: auto;
+	background:gray url(../images/links-b.g-new.png);
+	background-repeat:no-repeat;}
 
 #content nav {
 	clear: both;
@@ -211,10 +194,6 @@ background-repeat:no-repeat;
  	
 
 article{
-	
-font-family: Myriad Pro,Georgia,Helvetica, sans-serif; 	
-font-size:16px;
-color:#606060;	
 width:960px;
 height:2286px;
 background: url(images/content-b.g.png);
@@ -224,15 +203,43 @@ margin-left: auto;
 margin-right: auto;
 margin-top:10px;
 margin-bottom:10px;
-
-
 }
 
+
+/* = .  Footer
+========================================================================== */
 footer{
+	
 	height:300px;
-	width:1280px;
-	background: url(images/var-footer.png);
-	background-repeat:no-repeat bottom center;
+	max-width:1280px;
+	width: 100%;
+	background:#595959;
+	background : rgba(89, 89, 89, 1);
+	
+}
+#copyright{
+	position:relative;
+	font-family: Myriad Pro,Georgia,Helvetica, sans-serif; 		
+	font-size : 14px;
+	line-height : 18px;
+	letter-spacing : 1.2px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+	left : 20px;
+	top : 260px;
+	
+}
+
+
+#footer-logo{
+	
+	background-repeat:no-repeat;
+	left : 20px;
+	top : 0px;
+	
+	
+	
+}	
 	
 
- }
+ 

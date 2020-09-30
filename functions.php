@@ -2,9 +2,11 @@
   /**
   * Theme Name: ptype
   * Theme URL: http://geekedtype.com
-  * Description: This is  The main template file
+  * Description: The default template for functions and definitions
   * Author: Thiru Kimana <kimstilltheman@geekedtype.com>
-  * Theme Version: 0.0.1
+  * GNU General Public License v2 or later
+  * Version: 0.0.1
+  * Copyright 2020, Thiru Kimana
   *	
   **/
 
